@@ -22,6 +22,17 @@ const TipCalculator = () => {
           (parseFloat(bill) + parseFloat(bill) * (parseFloat(tip) / 100)) /
           parseInt(people)
         ).toFixed(2);
+
+  let amt = document.getElementsByClassName("amt");
+  if (amount.toString().length >= 6) {
+    for (let i = 0; i < amt.length; i++) {
+      amt[i].style.fontSize = "2.5rem";
+    }
+  } else {
+    for (let i = 0; i < amt.length; i++) {
+      amt[i].style.fontSize = "3.5rem";
+    }
+  }
   const [elemId, setElemId] = React.useState(0);
 
   const percents = [5, 10, 15, 25, 50];
@@ -122,7 +133,7 @@ const TipCalculator = () => {
             onFocus={() => setFocus(0)}
           >
             <span className="input-group-text" id="basic-addon1">
-              <img src="./images/icon-dollar.svg" />
+              <img src="./images/icon-dollar.svg" alt="dollar icon" />
             </span>
             <input
               type="number"
@@ -183,13 +194,13 @@ const TipCalculator = () => {
             }`}
             onFocus={() => setFocus(2)}
           >
-            <span className="input-group-text" id="basic-addon1">
-              <img src="./images/icon-person.svg" />
+            <span className="input-group-text" id="basic-addon2">
+              <img src="./images/icon-person.svg" alt="person icon" />
             </span>
             <input
               type="number"
               className="form-control bord"
-              aria-describedby="basic-addon1"
+              aria-describedby="basic-addon2"
               placeholder="0"
               onChange={(prop) => handleChange(prop, 2, "people")}
             />

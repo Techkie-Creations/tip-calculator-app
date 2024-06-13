@@ -123,10 +123,12 @@ body {
 
 .display .flex-items .dis-head .head {
   color: hsl(0, 0%, 100%);
+  margin: 0;
 }
 
 .display .flex-items .dis-head .sub-t {
   color: hsl(184, 14%, 56%);
+  margin: 0;
 }
 
 .display .flex-items .amt {
