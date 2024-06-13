@@ -128,7 +128,6 @@ const TipCalculator = () => {
               type="number"
               className="form-control bord"
               aria-describedby="basic-addon1"
-              dir="rtl"
               placeholder="0"
               onChange={(prop) => handleChange(prop, 0, "bill")}
             />
@@ -164,7 +163,6 @@ const TipCalculator = () => {
                 type="number"
                 className="form-control mid"
                 aria-describedby="basic-addon1"
-                dir="rtl"
                 onChange={(prop) => handleChange(prop, 1, "tip")}
                 placeholder="Custom"
               />
@@ -192,7 +190,6 @@ const TipCalculator = () => {
               type="number"
               className="form-control bord"
               aria-describedby="basic-addon1"
-              dir="rtl"
               placeholder="0"
               onChange={(prop) => handleChange(prop, 2, "people")}
             />
